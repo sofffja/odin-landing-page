@@ -12,6 +12,7 @@ body {
     display: flex;
     flex-direction: column;
     font-size: 18px;
+    color: #1f2937;
 }
 
 nav,
@@ -109,7 +110,6 @@ nav ul {
     font-weight: light;
     font-style: italic;
     font-size: 36px;
-    color: #1f2937;
 }
 
 .quote-tag {
