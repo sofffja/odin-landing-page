@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+}
+
+nav,
+.hero,
+footer {
+    display: flex;
+    align-items: center;
+    background-color: #1f2937;
+    color: #f9faf8;
+    padding: 16px 15vw;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+nav ul {
+    display: flex;
+    margin-left: auto;
+    gap: 16px;
+}
+
+.body {
+    flex: 1;
+}
+
+.hero {
+    align-items: center;
+    gap: 32px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.hero div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.small {
+    font-size: 16px;
+    color: #e5e7eb;
+}
+
+.hero img {
+    width: 60%;
+    height: auto;
+    max-width: 800px;
+}
+
+.section-a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px;
+    gap: 32px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+
+.info {
+    max-width: 120px;
+    flex-shrink: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.info img {
+    border-radius: 15px;
+}
+
+.quote-section {
+    background-color: #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 15vw;
+}
+
+.quote {
+    font-weight: light;
+    font-style: italic;
+    font-size: 36px;
+    color: #1f2937;
+}
+
+.quote-tag {
+    text-align: right;
+    font-weight: bold;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+
+    margin: 80px auto;
+    padding: 40px 32px;
+    max-width: 800px;
+
+    background-color: #3882f6;
+    color: #f9faf8;
+    border-radius: 16px;
+}
+
+.card-header {
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+button {
+    flex-shrink: 0;
+    padding: 8px 32px;
+    border: none;
+    background-color: #3882f6;
+    color: #f9faf8;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+.card button {
+    border: solid white;
+}
+
+footer {
+    justify-content: center;
+    /* padding: 32px; */
+}
