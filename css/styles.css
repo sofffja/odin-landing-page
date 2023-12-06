@@ -5,6 +5,11 @@
     margin: 0;
     text-decoration: none;
     list-style: none;
+
+    --dark: #000000;
+    --accent: #0000ff;
+    --secondary: #e3e3e3;
+    --light: #f7f7f7;
 }
 
 body {
@@ -12,6 +17,8 @@ body {
     display: flex;
     flex-direction: column;
     font-size: 18px;
+    color: var(--dark);
+    background-color: var(--light);
 }
 
 nav,
@@ -19,10 +26,18 @@ nav,
 footer {
     display: flex;
     align-items: center;
-    background-color: #1f2937;
-    color: #f9faf8;
-    padding: 16px 15vw;
+    background-color: var(--dark);
+    color: var(--light);
+    padding: 16px;
 }
+
+nav,
+h1,
+h2,
+.card-header {
+    text-transform: uppercase;
+}
+
 
 .logo {
     font-size: 24px;
@@ -44,6 +59,8 @@ nav ul {
     gap: 32px;
     padding-top: 80px;
     padding-bottom: 80px;
+    padding-right: 0;
+    padding: 80px 0 80px 100px;
 }
 
 .hero div {
@@ -60,13 +77,13 @@ nav ul {
 
 .small {
     font-size: 16px;
-    color: #e5e7eb;
+    color: var(--secondary);
 }
 
 .hero img {
     width: 60%;
     height: auto;
-    max-width: 800px;
+    /* max-width: 800px; */
 }
 
 .section-a {
@@ -85,7 +102,7 @@ nav ul {
 }
 
 .info {
-    max-width: 120px;
+    max-width: 200px;
     flex-shrink: 1;
     text-align: center;
     display: flex;
@@ -98,7 +115,7 @@ nav ul {
 }
 
 .quote-section {
-    background-color: #e5e7eb;
+    background-color: var(--secondary);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -109,7 +126,6 @@ nav ul {
     font-weight: light;
     font-style: italic;
     font-size: 36px;
-    color: #1f2937;
 }
 
 .quote-tag {
@@ -127,8 +143,8 @@ nav ul {
     padding: 40px 32px;
     max-width: 800px;
 
-    background-color: #3882f6;
-    color: #f9faf8;
+    background-color: var(--accent);
+    color: var(--light);
     border-radius: 16px;
 }
 
@@ -141,17 +157,17 @@ button {
     flex-shrink: 0;
     padding: 8px 32px;
     border: none;
-    background-color: #3882f6;
-    color: #f9faf8;
+    background-color: var(--accent);
+    color: var(--light);
     border-radius: 8px;
     font-size: 18px;
 }
 
 .card button {
-    border: solid white;
+    border: solid var(--light);
 }
 
 footer {
-    justify-content: center;
+    justify-content: flex-end;
     /* padding: 32px; */
 }
