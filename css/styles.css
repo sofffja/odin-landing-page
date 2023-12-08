@@ -7,10 +7,12 @@
     text-decoration: none;
     list-style: none;
 
-    --dark: #000000;
-    --accent: #0000ff;
-    --secondary: #e3e3e3;
-    --light: #f7f7f7;
+    --text: #f1f1f6;
+    --background: #060607;
+    --primary: #bdd3ce;
+    --secondary: #d7d7d7;
+    --accent: #0010ff;
+
 }
 
 body {
@@ -19,8 +21,15 @@ body {
     display: flex;
     flex-direction: column;
     font-size: 18px;
-    color: var(--dark);
-    background-color: var(--light);
+    color: var(--background);
+    background-color: var(--text);
+}
+
+a {
+    color: inherit;
+}
+a:hover {
+    color: var(--text);
 }
 
 nav,
@@ -28,8 +37,8 @@ nav,
 footer {
     display: flex;
     align-items: center;
-    background-color: var(--dark);
-    color: var(--light);
+    background-color: var(--background);
+    color: var(--text);
     padding: 1rem;
 }
 
@@ -43,7 +52,7 @@ h2,
 
 
 .logo {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: bolder;
     font-family: 'Inter', sans-serif;
 }
@@ -51,7 +60,10 @@ h2,
 nav ul {
     display: flex;
     margin-left: auto;
-    gap: 16px;
+    gap: 1rem;
+    border: 2px solid var(--primary);
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
 }
 
 .body {
@@ -62,32 +74,34 @@ nav ul {
     display: flex;
     gap: 3rem;
     padding: 4rem 0 4rem 6rem;
+    border-radius: 0 0 2rem 2rem;
 }
 
 .hero div {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .hero h1 {
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: bolder;
 }
 
 .small {
-    font-size: 16px;
+    font-size: 1rem;
     color: var(--secondary);
 }
 
 .hero img {
     width: 60%;
     height: auto;
+    border-radius: 1rem 0 0 1rem;
 }
 
 .section-a {
-    padding: 80px;
+    padding: 6rem;
     text-align: center;
 }
 
@@ -108,7 +122,7 @@ nav ul {
 }
 
 .info img {
-    border-radius: 15px;
+    border-radius: 1rem;
 }
 
 .quote-section {
@@ -122,7 +136,7 @@ nav ul {
 .quote {
     font-weight: light;
     font-style: italic;
-    font-size: 36px;
+    font-size: 2rem;
 }
 
 .quote-tag {
@@ -138,18 +152,18 @@ nav ul {
     align-items: center;
     gap: 3rem;
 
-    margin: 6rem auto;
+    margin: 8rem auto;
     padding: 3rem 2rem;
     max-width: 800px;
 
     background-color: var(--accent);
-    color: var(--light);
-    border-radius: 16px;
+    color: var(--text);
+    border-radius: 1rem;
 }
 
 .card-header {
     font-weight: bolder;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 button {
@@ -158,15 +172,22 @@ button {
     padding: 8px 32px;
     border: none;
     background-color: var(--accent);
-    color: var(--light);
-    border-radius: 8px;
-    font-size: 18px;
+    color: var(--text);
+    border-radius: 2rem;
+    font-size: 1.25rem;
 }
 
 .secondary-button {
-    border: solid var(--light);
+    border: solid var(--text);
 }
 
 footer {
     justify-content: center;
+}
+
+.bg-gradient {
+    background: linear-gradient(91deg, var(--accent) 11.52%, var(--primary) 49.71%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
